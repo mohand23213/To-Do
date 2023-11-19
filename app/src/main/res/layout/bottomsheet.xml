@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="200dp"
+    android:padding="20dp"
+    android:orientation="vertical">
+    <EditText
+        android:layout_marginVertical="25dp"
+        android:id="@+id/addTaskFeild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:background="@drawable/textfeildstyle"/>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addTaskFeild"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:background="@drawable/roundedbutton"
+        android:text="submit" />
+
+</LinearLayout>

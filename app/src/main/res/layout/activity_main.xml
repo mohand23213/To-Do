@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_appbar"
+        android:minHeight="60dp"
+        android:outlineAmbientShadowColor="@color/white"
+        android:elevation="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:rotationX="360"
+            android:text="ToDo"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+
+        android:layout_height="250dp">
+        <Button
+            android:id="@+id/records"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:text="records"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:strokeColor="#DDDDDD" />
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:id="@+id/taskFinished"
+            android:text="To do"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/taskOnList"
+            android:text="0 Task"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:background="@drawable/shape"
+            >
+
+
+            <ListView
+                android:id="@+id/list_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                >
+            </ListView>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <Button
+            android:id="@+id/DoneButto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/roundedbutton"
+            android:text="Done"
+            android:textColor="@color/white"
+            android:textColorHighlight="#FFFAFA"
+            android:textColorHint="#D54949"
+            android:textColorLink="#D13333"
+            android:textSize="15dp"
+            app:strokeColor="#DDDDDD" />
+        <Button
+            android:id="@+id/addTaskButto"
+            android:layout_width="wrap_content"
+            android:background="@drawable/roundedbutton"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:text="+"/>
+    </FrameLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:title="ToDo"
+    app:titleTextColor="@color/white"
+    android:textAlignment="center"
+    android:background="@color/blue_appbar">
+
+    <!-- TextView for the centered text -->
+
+</androidx.appcompat.widget.Toolbar>
